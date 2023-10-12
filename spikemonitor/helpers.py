@@ -15,6 +15,9 @@ def read_header():
   else:
     raise Exception("Header file not selected.")
 
+def read_write():
+  return 'read'
+
 # Neuronexus recording details are stored in JSON files. We want to extract the sample rate, total # of channels, # of probes, # of channels in each probe, the depth information, and the channel offset of each probe.
 # An example JSON file from a NeuroNexus recording is available here: https://drive.google.com/file/d/1T1_pEUKCY1Ovkwt61lfP7ww5hKReVmDX/view?usp=drive_link
 # The sample rate is located in the "sample_freq" field.
