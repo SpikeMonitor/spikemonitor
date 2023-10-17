@@ -67,7 +67,8 @@ class recording:
     
     def __init__(self, data):
         
-        self.sample_freq = data['status']['samp_freq']    
+        self.sample_freq = data['status']['samp_freq']
+        self.stride = data['status']['signals']['total']
         self.channel_number = data['status']['signals']['pri']
             
         port = data['sapiens_base']['biointerface_map']['port'][:self.channel_number]
